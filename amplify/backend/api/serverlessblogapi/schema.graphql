@@ -1,0 +1,5 @@
+type Comment @model {
+  id: ID!
+  postPath: String
+  timestamp: AWSDateTime
+}
