@@ -1,3 +1,3 @@
-// custom typefaces
-import "typeface-montserrat"
-import "typeface-merriweather"
+// eslint-disable-next-line no-global-assign
+require = require('esm')(module)
+module.exports = require('./gatsby-browser.esm.js')
