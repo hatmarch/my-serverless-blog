@@ -1,3 +1,2 @@
-// eslint-disable-next-line no-global-assign
-require = require('esm')(module)
-module.exports = require('./gatsby-browser.esm.js')
+const preferDefault = m => (m && m.default) || m;
+exports.wrapRootElement = preferDefault(require(`./wrap-with-provider`));
